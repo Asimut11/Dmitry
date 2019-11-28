@@ -1,0 +1,52 @@
+import java.lang.*;
+public class Ball {
+private String color;
+private int radius;
+
+public Ball(String c, int r){
+color = c;
+radius = r;
+}
+public Ball(String c){
+color = c;
+radius = 6;
+}
+public Ball(){
+color = "Red";
+radius = 6;
+}
+public void setRadius(int radius) {
+this.radius = radius;
+}
+public void setColor (String color) {
+this.color = color;
+}
+public String getColor(String color){
+return color;
+}
+public int getRadius() {
+return radius;
+}
+public String toString(){
+return this.color+", ball "+this.radius;
+}
+public void intoBallRadius(){
+System.out.println(color+"ball a radius "+radius+" ");
+}
+}
+
+import java.lang.*;
+public class TestBall {
+    public static void main(String[] args) {
+        Ball b1 = new Ball("Green ", 2);
+        Ball b2 = new Ball("Blue ", 5);
+        Ball b3 = new Ball("Black ");
+        b3.setRadius(1);
+        System.out.println(b1);
+        b1.intoBallRadius();
+        b2.intoBallRadius();
+        b3.intoBallRadius();
+    }
+}
+ 
+ 
